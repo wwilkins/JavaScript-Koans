@@ -1,4 +1,3 @@
-
 module("About Control Structures (topics/about_control_structures.js)");
 
 test("if", function() {
@@ -25,8 +24,8 @@ test("for in", function() {
 	};
 	var result = "";
 	// for in enumerates the property names of an object
-	for (property_name in person) {
-  result = result + property_name;
+	for (var property_name in person) {
+  		result = result + property_name;
 	};
 	equals(result, __, 'what is the value of result?');
 });
